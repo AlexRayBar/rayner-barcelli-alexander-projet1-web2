@@ -487,3 +487,238 @@ nav {
 
 
 }
+
+.list {
+
+    display: flex;
+    padding: 60px 170px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    align-self: stretch;
+
+    .list-title {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+
+        h1 {
+            color: var(----color-accent);
+            text-align: center;
+            font-family: "Montagu Slab";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px;
+        }
+
+        p {
+            color: var(--color-text);
+            text-align: center;
+            font-family: "Montagu Slab";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+
+        }
+    }
+
+
+    ul {
+
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        align-self: stretch;
+        list-style: none;
+
+
+
+
+    }
+
+
+    .item {
+        width: 30%;
+        display: flex;
+        padding: 12px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex: 1 0 0;
+
+
+        .icon {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            background: #D4D4E3;
+
+
+            p {
+                display: flex;
+                width: 100px;
+                flex-direction: column;
+                justify-content: center;
+                flex-shrink: 0;
+                align-self: stretch;
+                aspect-ratio: 1/1;
+                overflow: hidden;
+                color: var(--color-text);
+                text-align: center;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100px;
+            }
+        }
+
+
+    }
+
+    .jour {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+
+        p {
+            align-self: stretch;
+            color: var(--color-text);
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+
+        }
+
+    }
+
+    p {
+        align-self: stretch;
+        color: var(--color-text);
+        text-align: center;
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+
+}
+
+
+.reviews {
+    display: flex;
+    padding: 60px 170px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    align-self: stretch;
+    background-color: var(--color-bg);
+}
+
+.review-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+
+    h1 {
+        align-self: stretch;
+        color: var(--color-accent);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+    }
+}
+
+.review-list {
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex: 1 0 0;
+}
+
+.review-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.review-card {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    border-radius: 6px;
+    background: var(--color-bg-2);
+
+
+}
+
+.review-card-p {
+    height: 72px;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--color-text);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.user-card {
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.avatar-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.avatar-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.avatar-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
