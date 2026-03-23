@@ -15,120 +15,90 @@
     --color-text-3: #FFFFFF;
     --color-bg-2: #D4D4E3;
 
-    /* Les bariables d'espacements */
+    /* Les variables d'espacements */
 
-    --gap-1: 10px;
-    --gap-2: 38px;
-    --gap-3: 24px;
-    --gap-4: 12px;
-    --gap-5: 60px;
-    --gap-6: 16px;
-    --gap-7: 40px;
-
-
-
-
+    --gap-1: 0.625rem;
+    --gap-2: 2.375rem;
+    --gap-3: 1.5rem;
+    --gap-4: 0.75rem;
+    --gap-5: 3.75rem;
+    --gap-6: 1rem;
+    --gap-7: 2.5rem;
 }
 
 /* J'ai mis le font dans toute la page */
 * {
     font-family: "Montagu Slab";
-
-
 }
 
 nav {
     background-color: var(--color-primary);
     display: flex;
-    height: 80px;
-    padding: 10px 60px;
-
-    /* J'ai utiliser le justify content: space-between 
-    pour avoir tout les espacement égaux. Aussi j'ai mis align-items center 
-    pour avoir tout centrer sur une ligne */
+    height: 5rem;
+    padding: 0.625rem 3.75rem;
 
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
 
-    /* J'ai crée un section de code pour le logo et le titre dans la navigation */
-
     .nav-logo-text {
-
-
         display: flex;
-        height: 60px;
+        height: 3.75rem;
         justify-content: center;
         align-items: center;
         gap: var(--gap-1);
 
         .logo {
-            width: 57px;
-            height: 36px;
+            width: 3.5625rem;
+            height: 2.25rem;
         }
 
         p {
             color: var(--color-accent);
-            font-size: 24px;
+            font-size: 1.5rem;
             font-style: normal;
             font-weight: 400;
-            line-height: 22px;
-
+            line-height: 1.375rem;
         }
     }
 
-    /* J'ai crée une autre section pour le texte dans la navigation */
-
     .nav-text {
-
-
-        font-size: 16px;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 22px;
+        line-height: 1.375rem;
         list-style: none;
 
         color: var(--color-text-3);
         display: flex;
-        padding: 2px 24px;
+        padding: 0.125rem 1.5rem;
         justify-content: center;
         align-items: center;
         gap: var(--gap-2);
         flex: 1 0 0;
-
     }
 
-
-    /* Ci-dessous c'est le code pour le boutton dans la navigation */
-
     .button-nav-style {
-
-
-
         background-color: var(--color-accent);
         color: var(--color-text);
         display: flex;
-        width: 192px;
-        padding: 14px 16px;
+        width: 12rem;
+        padding: 0.875rem 1rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 4px;
+        border-radius: 0.25rem;
         border: none;
-
     }
-
-
 }
-
 
 .hero {
 
-    background: linear-gradient(180deg, rgba(21, 19, 60, 0.00) 0%, rgba(21, 19, 60, 0.84) 85.2%), url(./assets/2ba6c51215c7ed6515b3b2e16411319a1808fa44.jpg) lightgray 0px -114.076px / 100% 135.593% no-repeat;
+    background: linear-gradient(180deg, rgba(21, 19, 60, 0.00) 0%, rgba(21, 19, 60, 0.84) 85.2%), url(./assets/2ba6c51215c7ed6515b3b2e16411319a1808fa44.jpg) lightgray 0rem -7.12975rem / 100% 135.593% no-repeat;
 
     display: flex;
-    height: 641px;
-    padding: 60px;
+    height: auto;
+    padding: 3.75rem;
     justify-content: center;
     align-items: flex-end;
     gap: var(--gap-1);
@@ -149,7 +119,7 @@ nav {
             color: var(--color-text-3);
             text-align: center;
             font-family: "Montagu Slab";
-            font-size: 64px;
+            font-size: 4rem;
             font-style: normal;
             font-weight: 700;
             line-height: normal
@@ -159,10 +129,10 @@ nav {
             color: var(--color-text-3);
             text-align: center;
             font-family: "Montagu Slab";
-            font-size: 16px;
+            font-size: 1rem;
             font-style: normal;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 1.5rem;
         }
     }
 
@@ -180,23 +150,23 @@ nav {
             color: var(--color-text-3);
             background-color: transparent;
             display: flex;
-            width: 240px;
-            padding: 12px;
+            width: 15rem;
+            padding: 0.75rem;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: 1px solid var(--color-text-3);
-            border-radius: 8px;
+            border: 0.0625rem solid var(--color-text-3);
+            border-radius: 0.5rem;
         }
 
         .rejoignez-nous {
             color: var(--color-text);
-            border-radius: 8px;
+            border-radius: 0.5rem;
             border: none;
             background: var(--color-accent);
             display: flex;
-            width: 240px;
-            padding: 12px;
+            width: 15rem;
+            padding: 0.75rem;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -207,7 +177,7 @@ nav {
 
     .logo-big {
         display: flex;
-        height: 378.947px;
+        height: 23.6841875rem;
         justify-content: center;
         align-items: center;
         flex: 1 0 0;
@@ -218,7 +188,7 @@ nav {
 
 .propos {
     display: flex;
-    padding: 60px 170px;
+    padding: 3.75rem 10.625rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -235,26 +205,26 @@ nav {
 }
 
 .propos-title h1 {
-    width: 520px;
+    width: 100%;
     color: var(--color-text);
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 3rem;
 }
 
 .propos-title p {
-    width: 918px;
+    width: 100%;
     color: var(--color-text);
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .card-list {
     display: flex;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     justify-content: center;
     align-items: center;
     align-self: stretch;
@@ -263,27 +233,27 @@ nav {
 .cards {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
     align-self: stretch;
     width: 100%;
 }
 
 .card {
     display: flex;
-    padding: 16px;
+    padding: 1rem;
     justify-content: center;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
     flex: 1 0 0;
-    border-radius: 6px;
-    border: 1px solid var(--color-border);
+    border-radius: 0.375rem;
+    border: 0.0625rem solid var(--color-border);
     background-color: white;
 }
 
 .card-img {
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
 }
 
 .image {
@@ -296,39 +266,39 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 0.5rem;
     flex: 1 0 0;
 }
 
 .card-title {
     color: var(--color-text);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 1.75rem;
 }
 
 .card-p {
     color: var(--color-text);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .user {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     border-radius: 50%;
     background: var(--color-accent, #EC994B);
 }
 
 .user-p {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 
@@ -337,7 +307,7 @@ nav {
 
     background-color: var(--color-bg-3);
     display: flex;
-    padding: 60px 170px;
+    padding: 3.75rem 10.625rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -354,26 +324,26 @@ nav {
         align-self: stretch;
 
         h1 {
-            width: 520px;
+            width: 100%;
             color: var(--color-accent);
             text-align: center;
-            font-size: 40px;
+            font-size: 2.5rem;
             font-style: normal;
             font-weight: 700;
-            line-height: 48px;
+            line-height: 3rem;
         }
 
         button {
 
             display: flex;
-            width: 240px;
-            padding: 12px;
+            width: 15rem;
+            padding: 0.75rem;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: var(--color-accent);
             border: none;
-            border-radius: 6px;
+            border-radius: 0.375rem;
         }
 
     }
@@ -384,13 +354,13 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: 2.5rem;
         align-self: stretch;
 
         .service-list-cards {
             display: flex;
             align-items: flex-start;
-            gap: 40px;
+            gap: 2.5rem;
             align-self: stretch;
             list-style: none;
 
@@ -402,23 +372,23 @@ nav {
                 align-items: center;
                 flex: 1 0 0;
                 align-self: stretch;
-                border-radius: 6px;
+                border-radius: 0.375rem;
                 background-color: var(--color-bg);
-                border: 1px solid var(--color-border);
+                border: 0.0625rem solid var(--color-border);
 
                 .service-card-img {
 
 
                     display: flex;
-                    height: 340px;
+                    height: auto;
                     align-items: flex-start;
                     align-self: stretch;
 
                     div {
-                        width: 271px;
-                        height: 340px;
+                        width: 100%;
+                        height: 21.25rem;
                         display: flex;
-                        padding: 0 16.3px 0 16px;
+                        padding: 0 1.01875rem 0 1rem;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
@@ -429,49 +399,49 @@ nav {
 
                     p {
                         display: flex;
-                        width: 271px;
-                        height: 16px;
+                        width: 100%;
+                        height: 1rem;
                         flex-direction: column;
                         justify-content: center;
                         color: var(--color-text);
                         text-align: center;
-                        font-size: 12px;
+                        font-size: 0.75rem;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 16px;
+                        line-height: 1rem;
                     }
                 }
 
                 .service-card-text {
                     display: flex;
-                    height: 129px;
-                    padding: 12px;
+                    height: auto;
+                    padding: 0.75rem;
                     flex-direction: column;
                     align-items: flex-start;
-                    gap: 4px;
+                    gap: 0.25rem;
                     align-self: stretch;
 
                     h1 {
                         align-self: stretch;
                         color: var(--color-text);
-                        font-size: 20px;
+                        font-size: 1.25rem;
                         font-style: normal;
                         font-weight: 700;
-                        line-height: 24px;
+                        line-height: 1.5rem;
                     }
 
                     p {
 
-                        height: 56px;
+                        height: auto;
                         flex-shrink: 0;
                         align-self: stretch;
                         overflow: hidden;
                         color: #15133C;
                         text-overflow: ellipsis;
-                        font-size: 16px;
+                        font-size: 1rem;
                         font-style: normal;
                         font-weight: 500;
-                        line-height: 28px;
+                        line-height: 1.75rem;
 
 
                     }
@@ -491,11 +461,11 @@ nav {
 .list {
 
     display: flex;
-    padding: 60px 170px;
+    padding: 3.75rem 10.625rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 3.75rem;
     align-self: stretch;
 
     .list-title {
@@ -503,27 +473,27 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 24px;
+        gap: 1.5rem;
         align-self: stretch;
 
         h1 {
             color: var(----color-accent);
             text-align: center;
             font-family: "Montagu Slab";
-            font-size: 40px;
+            font-size: 2.5rem;
             font-style: normal;
             font-weight: 700;
-            line-height: 48px;
+            line-height: 3rem;
         }
 
         p {
             color: var(--color-text);
             text-align: center;
             font-family: "Montagu Slab";
-            font-size: 16px;
+            font-size: 1rem;
             font-style: normal;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 1.5rem;
 
         }
     }
@@ -537,7 +507,7 @@ nav {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 0px;
+        gap: 0rem;
         align-self: stretch;
         list-style: none;
 
@@ -550,27 +520,27 @@ nav {
     .item {
         width: 30%;
         display: flex;
-        padding: 12px 0;
+        padding: 0.75rem 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
         flex: 1 0 0;
 
 
         .icon {
             display: flex;
-            width: 100px;
-            height: 100px;
+            width: 6.25rem;
+            height: 6.25rem;
             justify-content: center;
             align-items: center;
-            border-radius: 50px;
+            border-radius: 3.125rem;
             background: #D4D4E3;
 
 
             p {
                 display: flex;
-                width: 100px;
+                width: 6.25rem;
                 flex-direction: column;
                 justify-content: center;
                 flex-shrink: 0;
@@ -581,10 +551,10 @@ nav {
                 text-align: center;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                font-size: 32px;
+                font-size: 2rem;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 100px;
+                line-height: 6.25rem;
             }
         }
 
@@ -595,17 +565,17 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: 0.5rem;
         align-self: stretch;
 
         p {
             align-self: stretch;
             color: var(--color-text);
             text-align: center;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-style: normal;
             font-weight: 600;
-            line-height: 28px;
+            line-height: 1.75rem;
 
         }
 
@@ -616,10 +586,10 @@ nav {
         color: var(--color-text);
         text-align: center;
 
-        font-size: 20px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 36px;
+        line-height: 2.25rem;
     }
 
 
@@ -628,10 +598,10 @@ nav {
 
 .reviews {
     display: flex;
-    padding: 60px 170px;
+    padding: 3.75rem 10.625rem;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 3.75rem;
     align-self: stretch;
     background-color: var(--color-bg);
 }
@@ -640,80 +610,80 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 1.5rem;
     flex: 1 0 0;
 
     h1 {
         align-self: stretch;
         color: var(--color-accent);
-        font-size: 40px;
+        font-size: 2.5rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 48px;
+        line-height: 3rem;
     }
 }
 
 .review-list {
     display: flex;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
     flex: 1 0 0;
 }
 
 .review-row {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
+    gap: 2.5rem;
     align-self: stretch;
 }
 
 .review-card {
     display: flex;
-    padding: 16px;
+    padding: 1rem;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
     flex: 1 0 0;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     background: var(--color-bg-2);
 
 
 }
 
 .review-card-p {
-    height: 72px;
+    height: auto;
     align-self: stretch;
     overflow: hidden;
     color: var(--color-text);
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .user-card {
 
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 0.25rem;
     align-self: stretch;
 }
 
 .avatar-card {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
     flex: 1 0 0;
 }
 
 .avatar-logo {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .avatar-name {
@@ -721,4 +691,363 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     flex: 1 0 0;
+}
+
+.equipe {
+
+    display: flex;
+    padding: 3.75rem 10.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    align-self: stretch;
+
+    img {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    button {
+        display: flex;
+        width: 10rem;
+        padding: 0.75rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        background: var(--color-bg-3);
+        color: var(--color-text-3);
+        border: none;
+    }
+
+
+}
+
+.equipe-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1 0 0;
+
+    h1 {
+        align-self: stretch;
+        color: var(--color-text);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2rem;
+    }
+
+    p {
+        align-self: stretch;
+        color: var(--color-text);
+        font-family: "Montagu Slab";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+}
+
+.tarif {
+
+
+
+    display: flex;
+    padding: 3.75rem 10.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.75rem;
+    align-self: stretch;
+    background: var(--color-bg);
+}
+
+.tarif-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;
+
+    h1 {
+        color: var(--color-accent);
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3rem;
+    }
+
+    p {
+        color: var(--color-text);
+        text-align: center;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+}
+
+.tarif-list {
+    display: flex;
+    padding: 1.25rem 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    align-self: stretch;
+}
+
+.tarif-card {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    flex: 1 0 0;
+    border-radius: 0.375rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.10);
+    background: var(--color-text-3);
+}
+
+.list-img {
+    display: flex;
+    width: 6.25rem;
+    height: 6.25rem;
+    align-items: stretch;
+    background: var(--color-bg-2);
+}
+
+.tarif-list-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex: 1 0 0;
+
+    h1 {
+        align-self: stretch;
+        color: var(--color-text);
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.75rem;
+    }
+
+    p {
+        align-self: stretch;
+        color: var(--color-text);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+}
+
+.contacter {
+    display: flex;
+    padding: 3.75rem 10.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.75rem;
+    align-self: stretch;
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        align-self: stretch;
+        color: var(--color-accent);
+    }
+
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    align-self: stretch;
+}
+
+.form-inputs {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    align-self: center;
+}
+
+.form-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+
+    label {
+        align-self: stretch;
+        color: var(--color-text);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+    }
+
+    #name {
+        width: 100%;
+        display: flex;
+        padding: 0.5rem 0.75rem;
+        align-items: center;
+        gap: 0.25rem;
+        align-self: stretch;
+        border-radius: 0.375rem;
+        border: 0.0625rem solid rgba(0, 0, 0, 0.10);
+        background: var(--color-text-3);
+    }
+}
+
+.form-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+
+    label {
+        align-self: stretch;
+        color: var(--color-text);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+    }
+
+    #email {
+        width: 100%;
+        display: flex;
+        padding: 0.5rem 0.75rem;
+        align-items: center;
+        gap: 0.25rem;
+        align-self: stretch;
+        border-radius: 0.375rem;
+        border: 0.0625rem solid rgba(0, 0, 0, 0.10);
+        background: var(--color-text-3);
+    }
+}
+
+.form-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+
+    label {
+        align-self: stretch;
+        color: var(--color-text);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+    }
+
+    #message {
+        width: 100%;
+        display: flex;
+        padding: 0.5rem 0.75rem;
+        align-items: center;
+        gap: 0.25rem;
+        align-self: stretch;
+        border-radius: 0.375rem;
+        border: 0.0625rem solid rgba(0, 0, 0, 0.10);
+        background: var(--color-text-3);
+    }
+}
+
+.form-btn {
+    display: flex;
+    width: 19.625rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+
+    button {
+        border: none;
+        display: flex;
+        padding: 0.75rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 0.5rem;
+        background: var(--color-bg-3);
+        color: var(--color-text-3);
+    }
+}
+
+footer {
+    display: flex;
+    padding: 3.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3.75rem;
+    align-self: stretch;
+    background-color: #15133C;
+
+    .footer-sec {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 3.75rem;
+
+        p {
+            color: var(--color-text-3);
+            text-align: center;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.75rem;
+        }
+    }
+}
+
+.footer-card {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    border-radius: 0.4375rem;
+    background: var(--color-bg);
+
+    h1 {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-self: stretch;
+        color: var(--color-text);
+        text-align: center;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.375rem;
+    }
+
+    button {
+        display: flex;
+        padding: 0.625rem 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.25rem;
+        background: var(--color-accent);
+        border: none;
+    }
 }
